@@ -13,11 +13,12 @@ try {
     //правильне
     assertEqual(timeToMinutes("00:00"), 0, '00:00 = 0 хв');
     //assertEqual(timeToMinutes("01:30"), 90, '01:30 = 90 хв');
-    assertEqual(timeToMinutes("23:15"), 1395, '23:15 = 1395 хв');
+    //assertEqual(timeToMinutes("23:15"), 1395, '23:15 = 1395 хв');
     assertEqual(timeToMinutes("12:00"), 720, '12:00 = 720 хв');
 
     //помилку
     assertEqual(timeToMinutes("01:30"), 91, '01:30 = 90 хв');
+    assertEqual(timeToMinutes("23:15"), 1895, '23:15 = 1395 хв');
 
     console.log("Усі тести пройдено успішно!");
 } catch (e) {
